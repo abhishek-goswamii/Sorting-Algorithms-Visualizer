@@ -13,27 +13,35 @@ let margin_size
 
 let container = document.getElementById("container")
 
-container.style = "flex-direction:row"
 
 generate_new_array_btn.addEventListener("click",generateNewArray)
 
 array_size_slider.addEventListener('input',updateArraySize)
+
+function updateArraySize() {
+    array_size = array_size_slider.value
+    generateNewArray()
+}
 
 function generateNewArray() {
 
     container.innerHTML = ""
     //making container div empty
     
-    div_height[i] = Math.floor(Math.random() * (array_size_slider.max - array_size_slider.min)) + 10;
-    //generating random array between 20 to 150
-    
-    divs[i] = document.createElement("div")
-    
-    container.appendChild(divs[i])
+    for (let i = 0; i < array_size; i++) {
+        console.log("here");
+        div_height[i] = Math.floor(Math.random() *0.35* (array_size_slider.max - array_size_slider.min)) + 10;
+        //generating random array between 20 to 150
 
-    margin_size = 0.1;
+        divs[i] = document.createElement("div")
 
-    divs[i].style = " margin:0% " + margin_size + "%; background-color:#40e0d0; width:" + (100 / array_size - (2 * margin_size)) + "%; height:" + (div_height[i]) + "%;";
+        container.appendChild(divs[i])
+
+        margin_size = 0.1;
+
+        divs[i].style = `margin:0rem ${margin_size}rem; background-color:#40e0d0; width: ${(100 / array_size - (2 * margin_size))}rem; height: ${(div_height[i])}rem`
+
+    }
 
 }
 

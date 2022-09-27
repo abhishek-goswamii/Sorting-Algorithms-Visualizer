@@ -10,6 +10,13 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
+#container {
+  display: flex;
+  align-items: end;
+  width: 100vw;
+  justify-content: space-around;
+}
+
 header {
   background-color: aliceblue;
 }
