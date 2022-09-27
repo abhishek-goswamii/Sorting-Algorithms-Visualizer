@@ -1,13 +1,74 @@
-<html>
-
-    <head>
-        <title>algorithms visualizer</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     
-    <body>
-        <h2>
-            ME
-        </h2>
-    </body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>algorithms visualizer</title>
+    <link rel="stylesheet" href="./css//style.css">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,600;1,200&family=Inter:wght@100;200;300;400;500;600;&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        
+        <div class="header-left">
+            
+            <div class="array-size-div">
+                <p>Change array size</p>
+                <input id="array-size-slider" type="range" min=20 max=150 step=1 value=80>
+            </div>
+            
+            <div class="array-size-div">
+                <p> Change sorting animation speed [ 1 - 5 ] </p>
+                <input id="array-speed-slider" type="range" min=1 max=5 step=1 value=4>
+            </div>
+
+            <div class="generate-array-div">
+                <button id="generate-array-btn">GENERATE NEW RANDOM ARRAY [...]</button>
+            </div>
+
+        </div>
+
+        <div class="header-right">
+            
+            <p>Sorting Algorithms Visualizer</p>
+            
+            <div id="algo-div">
+                    
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button >Heap</button>
+
+            </div>
+
+        </div>
+    
+    </header>
+
+    <section>
+
+
+    <div class="container">
+
+    </div>
+
+
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
 </html>
