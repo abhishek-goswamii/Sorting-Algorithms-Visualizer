@@ -1,5 +1,7 @@
 let array_size_slider = document.getElementById('array-size-slider'), array_size = array_size_slider.value;
+
 let generate_new_array_btn = document.getElementById("generate-array-btn")
+
 let array_speed_slider = document.getElementById("array-speed-slider")
 
 let algo_all_btns = document.querySelectorAll(".algo-div button")
