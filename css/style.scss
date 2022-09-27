@@ -36,7 +36,7 @@ html {
 }
 
 header {
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.882);
 }
 
 * {
@@ -52,8 +52,9 @@ header {
 header {
     background-color: aliceblue;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
-    height: 18rem;
+    height: 27vh;
 
     .header-right {
         p {
@@ -110,8 +111,9 @@ header {
             flex-direction: column;
             justify-content: space-between;
             p{
-                color: #3BACB6;
-                font-size: 2rem;
+                color: #967E76;
+                font-size: 1.8rem;
+                font-weight: 600;
             }
 
             input{
@@ -122,7 +124,7 @@ header {
                 &::-webkit-slider-thumb {
                     -webkit-appearance: none;
                     appearance: none;
-                    width: 1rem;
+                    width: .7rem;
                     height: 3rem;
                     background: #967E76;
                     cursor: pointer;
@@ -140,7 +142,7 @@ header {
 
                 -webkit-appearance: none;
                     width: 70%;
-                    height: 1.5rem;
+                    height: 1rem;
                     background: #EEE3CB;
                     outline: none;
                     opacity: 0.7;
@@ -154,15 +156,16 @@ header {
                     scale: 1.05;
                     cursor: pointer;
                 }
+            font-weight: 400;
             font-size: 1.7rem;
-            color: #3BACB6;
+            color: white;
             padding: 0rem;
             margin: 0rem;
             height: 4rem;
-            width: 32rem;
+            width: 40rem;
             border: none;
             border-radius: .3rem;
-            background-color: #bffff037;
+            background-color: #967E76;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
                 0 1px 2px rgba(0, 0, 0, 0.07),
                 0 2px 4px rgba(0, 0, 0, 0.07),

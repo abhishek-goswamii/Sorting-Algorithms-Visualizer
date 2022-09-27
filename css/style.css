@@ -33,7 +33,7 @@ html {
 }
 
 header {
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.882);
 }
 
 * {
@@ -47,8 +47,9 @@ header {
 header {
   background-color: aliceblue;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
-  height: 18rem;
+  height: 27vh;
 }
 header .header-right {
   width: 60%;
@@ -97,15 +98,16 @@ header .header-left .array-size-div {
   justify-content: space-between;
 }
 header .header-left .array-size-div p {
-  color: #3BACB6;
-  font-size: 2rem;
+  color: #967E76;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 header .header-left .array-size-div input {
   color: black;
   width: 20rem;
   -webkit-appearance: none;
   width: 70%;
-  height: 1.5rem;
+  height: 1rem;
   background: #EEE3CB;
   outline: none;
   opacity: 0.7;
@@ -117,7 +119,7 @@ header .header-left .array-size-div input:hover {
 header .header-left .array-size-div input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1rem;
+  width: 0.7rem;
   height: 3rem;
   background: #967E76;
   cursor: pointer;
@@ -129,15 +131,16 @@ header .header-left .array-size-div input::-moz-range-thumb {
   cursor: pointer;
 }
 header .header-left button {
+  font-weight: 400;
   font-size: 1.7rem;
-  color: #3BACB6;
+  color: white;
   padding: 0rem;
   margin: 0rem;
   height: 4rem;
-  width: 32rem;
+  width: 40rem;
   border: none;
   border-radius: 0.3rem;
-  background-color: rgba(191, 255, 240, 0.2156862745);
+  background-color: #967E76;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 16px rgba(0, 0, 0, 0.07), 0 16px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07);
 }
 header .header-left button:hover {
