@@ -2,6 +2,22 @@ html {
     font-size: 62.5%;
 }
 
+@media(max-width:998px){
+    html {
+            font-size: 50%;
+        }
+}
+@media(max-width:750px){
+    html {
+            font-size: 40%;
+        }
+}
+@media(max-width:500px){
+    html {
+            font-size: 30%;
+        }
+}
+
 * {
     margin: 0px;
     padding: 0px;
