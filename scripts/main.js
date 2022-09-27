@@ -46,6 +46,8 @@ function generateNewArray() {
 }
 
 
+window.onload = updateArraySize()
+
 
 
 
