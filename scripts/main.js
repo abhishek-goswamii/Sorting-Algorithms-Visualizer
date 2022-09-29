@@ -79,15 +79,15 @@ function sortfn() {
     switch (this.innerHTML) {
         case "Bubble": bubbleSort();
             break;
-        case "Selection": selectionSort();
+        case "Selection": insertionSort();
             break;
         case "Insertion": insertionSort();
             break;
-        case "Merge": mergeSort();
+        case "Merge": insertionSort();
             break;
-        case "Quick": quickSort();
+        case "Quick": insertionSort();
             break;
-        case "Heap": heapSort();
+        case "Heap": insertionSort();
             break;
     }
 
