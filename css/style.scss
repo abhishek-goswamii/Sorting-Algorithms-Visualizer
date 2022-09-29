@@ -29,6 +29,8 @@ html {
 }
 
 #container{
+    height: max-content;
+    height: 73vh;
     display: flex;
     align-items: end;
     width: 100vw;

@@ -26,6 +26,10 @@ html {
 }
 
 #container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  height: 73vh;
   display: flex;
   align-items: end;
   width: 100vw;
