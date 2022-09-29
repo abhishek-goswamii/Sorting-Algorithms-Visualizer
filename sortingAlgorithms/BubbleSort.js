@@ -19,9 +19,6 @@ function bubbleSort() {
                     div_height[j] = div_height[j+1]
                     div_height[j+1] = t
 
-                    // animate(divs[j], div_height[j], "red")
-                    // animate(divs[j + 1], div_height[j + 1], "red")
-
                 }
                 
                 animate(divs[j], div_height[j], "yellow")

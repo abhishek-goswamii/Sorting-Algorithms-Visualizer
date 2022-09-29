@@ -1,7 +1,7 @@
 function insertionSort() {
 
     c_delay = 0
-    
+
     for (var j = 0; j < array_size; j++) {
 
         animate(divs[j], div_height[j], "yellow");
@@ -22,14 +22,18 @@ function insertionSort() {
             animate(divs[i], div_height[i], "yellow");
 
             if (i == (j - 1)) {
+                
                 animate(divs[i + 1], div_height[i + 1], "yellow");
-            }
-            else {
+
+            }else {
+
                 animate(divs[i + 1], div_height[i + 1], "yellow");
+                
             }
 
             i -= 1;
         }
+
         div_height[i + 1] = key;
 
         for (var t = 0; t < j; t++) {
@@ -37,7 +41,7 @@ function insertionSort() {
         }
     }
 
-    animate(divs[j - 1], div_height[j - 1], "#40e0d0");
+            animate(divs[j - 1], div_height[j - 1], "#40e0d0");
 
     enable_buttons();
 }

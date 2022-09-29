@@ -11,7 +11,7 @@ function speedfn() {
 
     let val = array_speed_slider.value
 
-    switch (parseInt(value)) {
+    switch (parseInt(val)) {
         case 1: speed = 1;
             break;
         case 2: speed = 10;
