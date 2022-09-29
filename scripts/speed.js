@@ -25,7 +25,7 @@ function speedfn() {
     }
 
     delay_time = 10000 / (Math.floor(array_size / 10) * speed);
-    console.log(delay_time);        //Decrease numerator to increase speed.
+
 }
 
 var c_delay = 0; //This is updated ov every div change so that visualization is visible.
@@ -42,18 +42,19 @@ function animate(cont, height, color) {
 
 function enable_buttons() {
 
+    console.log("inside enable buttons")
+
     window.setTimeout(function () {
         
         for (var i = 0; i < algo_all_btns.length; i++) {
 
-            algo_all_btns[i].classList = [];
-            algo_all_btns[i].classList.add("btn-on");
-
-            algo_all_btns[i].disabled = false;
-
-            array_speed_slider.disabled = false;
-            generate_new_array_btn.disabled = false;
-            array_speed_slider.disabled = false;
+            algo_all_btns[i].classList = []
+            algo_all_btns[i].classList.add("btn-on")
+            
+            algo_all_btns[i].disabled = false
+            array_size_slider.disabled = false
+            generate_new_array_btn.disabled = false
+            array_speed_slider.disabled = false
 
         }
 

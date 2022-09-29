@@ -81,7 +81,7 @@ function sortfn() {
             break;
         case "Selection": selectionSort();
             break;
-        case "Insertion": innsertionSort();
+        case "Insertion": insertionSort();
             break;
         case "Merge": mergeSort();
             break;
