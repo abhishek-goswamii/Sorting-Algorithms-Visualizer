@@ -28,7 +28,7 @@ function speedfn() {
 
 }
 
-var c_delay = 0; //This is updated ov every div change so that visualization is visible.
+var c_delay = 0
 
 function animate(cont, height, color) {
 

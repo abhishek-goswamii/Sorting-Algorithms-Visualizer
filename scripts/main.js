@@ -58,6 +58,7 @@ function disable_buttons() {
 
     for (var i = 0; i < algo_all_btns.length; i++) {
 
+        
         algo_all_btns[i].classList = []
         algo_all_btns[i].classList.add("btn-off")
 
@@ -79,7 +80,7 @@ function sortfn() {
     switch (this.innerHTML) {
         case "Bubble": bubbleSort();
             break;
-        case "Selection": insertionSort();
+        case "Selection": selectionSort();
             break;
         case "Insertion": insertionSort();
             break;
