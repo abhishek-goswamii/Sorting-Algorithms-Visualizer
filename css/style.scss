@@ -177,3 +177,21 @@ header {
         }
     }
 }
+
+@media (max-width: 1100){
+    header .header-left .array-size-div p {
+        color: #967E76;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+@media (max-width: 400){
+    header .header-right #algo-div {
+        display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+        height: 11rem;
+    }
+}

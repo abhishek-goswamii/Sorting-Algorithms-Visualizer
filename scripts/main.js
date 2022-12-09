@@ -1,4 +1,3 @@
-
 let array_size_slider = document.getElementById('array-size-slider'), array_size = array_size_slider.value;
 
 let generate_new_array_btn = document.getElementById("generate-array-btn")
@@ -36,11 +35,9 @@ function generateNewArray() {
         divs[i] = document.createElement("div")
 
         container.appendChild(divs[i])
-
-        margin_size = 0.1;
-
+        margin_size = 0.1
         divs[i].style = `margin:0rem ${margin_size}rem; background-color:#FA9494; width: ${(100 / array_size - (2 * margin_size))}rem; height: ${(div_height[i])}rem`
-
+        
     }
 
 }
@@ -84,11 +81,11 @@ function sortfn() {
             break;
         case "Insertion": insertionSort();
             break;
-        case "Merge": insertionSort();
+        case "Merge": merge();
             break;
-        case "Quick": insertionSort();
+        case "Quick": quickSort();
             break;
-        case "Heap": insertionSort();
+        case "Heap": heap();
             break;
     }
 

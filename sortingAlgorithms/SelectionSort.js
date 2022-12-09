@@ -9,7 +9,7 @@ function selectionSort() {
         let min = div_height[i]
         let idx = i
 
-            animate(divs[i], div_height[i], "yellow")
+        animate(divs[i], div_height[i], "yellow")
 
         for (let j = i+1; j < array_size; j++) {
             
@@ -24,8 +24,8 @@ function selectionSort() {
                 idx = j
 
                 animate(divs[j], div_height[j], "#FA9494")
-
             }
+
             animate(divs[j], div_height[j], "#FA9494")
 
 
@@ -33,7 +33,9 @@ function selectionSort() {
         
 
         let t = div_height[i]
+        
         div_height[i] = div_height[idx]
+
         div_height[idx] = t
 
         animate(divs[idx], div_height[idx], "#FA9494")

@@ -150,4 +150,22 @@ header .header-left button {
 header .header-left button:hover {
   scale: 1.05;
   cursor: pointer;
+}
+
+@media (max-width: 1100) {
+  header .header-left .array-size-div p {
+    color: #967E76;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 400) {
+  header .header-right > div {
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    height: 11rem;
+  }
 }/*# sourceMappingURL=style.css.map */
